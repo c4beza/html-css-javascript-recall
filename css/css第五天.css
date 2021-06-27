@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    height: 100px;
+    width: 1202px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+nav ol {
+    float: left;
+    width: auto;
+    line-height: 100px;
+    margin-left: 25px;
+    font-size: 18px;
+}
+nav ol li {
+    float: left;
+    width: auto;
+    padding: 0 20px;
+}
+
+.current {
+    border-bottom: 2px solid #00a4ff;
+}
