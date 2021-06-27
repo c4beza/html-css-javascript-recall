@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 1200px;
+            height: 400px;
+            margin: 100px auto;
+        }
+
+        .content,
+        .main-content {
+            float: left;
+            width: 370px;
+            height: 370px;
+            margin: 15px 0px;
+        }
+
+        .box .main-content {
+            margin-left: 25px;
+            margin-right: 25px;
+            background-image: url(images/京东浮动布局/京东图片素材/center.png);
+            background-repeat: round;
+
+        }
+
+        .sub-box {
+            width: 370px;
+            height: 180px;
+            margin-bottom: 10px;
+        }
+
+        .sub-content {
+            float: left;
+            width: 180px;
+            height: 180px;
+            background-color: red;
+        }
+
+        .img1 {
+            background-image: url(images/京东浮动布局/京东图片素材/left01.png);
+            margin-right: 10px;
+        }
+
+        .img2 {
+            background-image: url(images/京东浮动布局/京东图片素材/left02.png);
+        }
+
+        .img3 {
+            background-image: url(images/京东浮动布局/京东图片素材/left03.png);
+            margin-right: 10px;
+        }
+
+        .img4 {
+            background-image: url(images/京东浮动布局/京东图片素材/left04.png);
+        }
+    </style>
+    <style>
+        .container {
+            height: 390px;
+            width: 1210px;
+            padding: 10px;
+            margin: 100px auto;
+        }
+
+        .left-container {
+            float: left;
+            height: 390px;
+            width: 230px;
+            background-image: url(images/学成网浮动布局/学成网素材/left.jpg);
+            margin-right: 15px;
+            background-repeat: round;
+        }
+
+        .right-container {
+            float: left;
+            width: 965px;
+            height: 390px;
+        }
+
+        .banner {
+            width: 965px;
+            height: 100px;
+            background-image: url(images/学成网浮动布局/学成网素材/top.jpg);
+            margin-bottom: 20px;
+        }
+
+        .card {
+            float: left;
+            height: 270px;
+            width: 230px;
+            margin-right: 15px;
+        }
+
+        .last {
+            margin-right: 0px;
+        }
+
+        .img {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="content" style="margin-left: 10px;">
+            <div class="sub-box">
+                <div class="sub-content img1"></div>
+                <div class="sub-content img2"></div>
+            </div>
+            <div class="sub-box">
+                <div class="sub-content img3"></div>
+                <div class="sub-content img4"></div>
+            </div>
+
+        </div>
+        <div class="main-content"></div>
+        <div class="content">
+            <div class="sub-box">
+                <div class="sub-content img1"></div>
+                <div class="sub-content img2"></div>
+            </div>
+            <div class="sub-box">
+                <div class="sub-content img3"></div>
+                <div class="sub-content img4"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left-container">
+        </div>
+        <div class="right-container">
+            <div class="banner"></div>
+            <div class="bot-cards">
+                <div class="card">
+                    <img class="img" src="images/学成网浮动布局/学成网素材/bottom01.jpg" alt="">
+                </div>
+                <div class="card">
+                    <img class="img" src="images/学成网浮动布局/学成网素材/bottom02.jpg" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <img class="img" src="images/学成网浮动布局/学成网素材/bottom03.jpg" alt="">
+            </div>
+            <div class="card last">
+                <img class="img" src="images/学成网浮动布局/学成网素材/bottom04.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
