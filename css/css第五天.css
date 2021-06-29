@@ -3,30 +3,182 @@
     padding: 0;
 }
 
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+input {
+    outline: none;
+}
 li {
     list-style: none;
 }
 
-nav {
-    height: 100px;
-    width: 1202px;
-    background-color: red;
-    margin: 0 auto;
+body {
+    background-color: #f3f5f7;
 }
 
-nav ol {
+a {
+    text-decoration: none;
+    color: #424243;
+}
+
+.header {
+    height: 42px;
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    width: 192px;
+}
+
+.nav {
     float: left;
     width: auto;
-    line-height: 100px;
-    margin-left: 25px;
+    line-height: 42px;
+    margin-left: 50px;
     font-size: 18px;
 }
-nav ol li {
+.nav ul li {
     float: left;
-    width: auto;
-    padding: 0 20px;
 }
 
-.current {
+.nav ul li a {
+    display: block;
+    width: auto;
+    padding: 0 10px;
+    margin: 0 12px;
+}
+
+.nav ul li a:hover {
     border-bottom: 2px solid #00a4ff;
+
+}
+
+.search {
+    float: left;
+    margin-left: 80px;
+    padding-left: 20px;
+    width: 360px;
+    height: 38px;
+    border: 2px solid #00a4ff;
+    border-right: none;
+    color: #cececf;
+}
+
+.searchbar button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    background-image: url(../images/css第五天/searchbtn.png);
+    border: none;
+}
+
+.useravatar {
+    float: left;
+    margin-left: 30px;
+}
+.useravatar img{
+    float: left;
+    margin:6px;
+}
+
+.useravatar a {
+    float: left;
+    color: #7e7e7f;
+    line-height: 42px;
+    font-size: 14px;
+}
+
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.banner .w{
+    height: 420px;
+    background: url(../images/css第五天/banner2.jpg) no-repeat top center;
+}
+
+/* banner区侧边栏 */
+
+.side-nav {
+    float: left;
+    width: 140px;
+    height: 390px;
+    padding: 15px 20px;
+    background: rgba(0,0,0,0.3);
+}
+
+.side-nav ul li a {
+    display: block;
+    height: 42px;
+    width: 140px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #d3d1d9;
+}
+
+.side-nav ul li a:hover {
+    color: #00b4ff;
+}
+
+.side-nav ul li a span {
+    float: right;
+}
+
+.lesson {
+    float: right;
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.course-title {
+    display: block;
+    height: 48px;
+    width: auto;
+    background-color: #9bceea;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 48px;
+
+}
+
+.course-list {
+    display: block;
+    height: 45px;   
+    width: auto;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: initial;
+}
+
+.course-list a h4 {
+    font-size: 18px;
+    color: #717171;
+    font-weight: 400;
+} 
+.course-list a h4 span {
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.course-list a p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.lesson button {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #9bceea;
+    color: #7dc5ff;
+    font-size: 16px;
 }
