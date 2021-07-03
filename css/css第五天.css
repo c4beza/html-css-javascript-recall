@@ -178,7 +178,41 @@ a {
     margin: 0 auto;
     width: 200px;
     height: 40px;
-    border: 1px solid #9bceea;
-    color: #7dc5ff;
+    border: 2px solid #22b0ff;
+    color: #22b0ff;
+    font-weight: 500;
     font-size: 16px;
+}
+
+.tabline {
+    float: left;
+    height: 69px;
+}
+
+.tabline li {
+    position: relative;
+    float: left;
+    padding: 20px 0px;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.tabline li h3 {
+    color: #00a4ff;
+    margin: 0 30px;
+    font-weight: 550;
+}
+
+.tabline li a {
+    padding: 0 30px;
+    border-left: 2px solid #bfbfbf;
+}
+
+.sub-nav>a {
+    float: right;
+    margin-right: 30px;
+    height: 69px;
+    font-size: 14px;
+    line-height: 69px;
+    color:#00a4ff;
 }
