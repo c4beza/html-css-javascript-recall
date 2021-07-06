@@ -184,8 +184,7 @@ a {
     font-size: 16px;
 }
 
-.tabline {
-    float: left;
+.sub-nav {
     height: 69px;
 }
 
@@ -200,7 +199,7 @@ a {
 .tabline li h3 {
     color: #00a4ff;
     margin: 0 30px;
-    font-weight: 550;
+    font-weight:500;
 }
 
 .tabline li a {
@@ -215,4 +214,48 @@ a {
     font-size: 14px;
     line-height: 69px;
     color:#00a4ff;
+}
+
+.interests.w h2 {
+    height: 42px;
+    font-size: 20px;
+    color: 686969;
+    font-weight: 500;
+    line-height: 42px;
+}
+
+.lesson-row {
+    height: 271px;
+}
+
+.lesson-card {
+    float: left;
+    margin-right: 15px;
+    width: 228px;
+    height: 271px;
+}
+
+.lesson-img {
+    height: 155px;
+    width: 228px;
+}
+
+.lesson-detail {
+    padding: 25px;
+    height: 116px;
+}
+
+.lesson-title {
+    font-size: 14px;
+}
+.lesson-type {
+    margin-top: 15px;
+    font-size: 12px;
+}
+.lesson-type span{
+    color: #ff7c2d;
+}
+
+.lesson-row ul li:last-child {
+    margin-right: 0px;
 }
