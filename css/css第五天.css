@@ -33,6 +33,9 @@ a {
     width: 192px;
 }
 
+.clear {
+    clear: both;
+}
 .nav {
     float: left;
     width: auto;
@@ -216,12 +219,45 @@ a {
     color:#00a4ff;
 }
 
-.interests.w h2 {
-    height: 42px;
+
+.interests-title {
+    height: 55px;
+}
+
+.interests-title.w h2 {
+    float: left;
+    height: 55px;
+    width: 229px;
     font-size: 20px;
     color: 686969;
     font-weight: 500;
-    line-height: 42px;
+    line-height: 55px;
+}
+
+.interests-title.w ul {
+    float: left;
+    margin-left: 165px;
+}
+
+.interests-title.w ul li {
+    float: left;
+    margin: auto 35px;
+    height: 55px;
+    font-size: 16px;
+    color: 686969;
+    line-height: 55px;
+}
+
+.interests-title.w ul li:first-child {
+    color: #00a4ff;
+}
+
+.interests-title.w>a {
+    float: right;
+    height: 55px;
+    font-size: 12px;
+    color: 686969;
+    line-height: 55px;
 }
 
 .lesson-row {
@@ -259,3 +295,28 @@ a {
 .lesson-row ul li:last-child {
     margin-right: 0px;
 }
+
+.lessons-leftcol {
+    float: left;
+    width: 229px;
+    height: 390px;
+}
+
+.lesson-guide-img {
+    width: 229px;
+    height: 390px;
+}
+
+.lessons-rightcol {
+    float: left;
+    margin-left: 10px;
+    width: 961px;
+    height: 390px;
+}
+
+.lessons-banner {
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+
