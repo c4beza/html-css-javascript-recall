@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first {
+            width: 245px;
+            height: 300px;
+        }
+
+        .first ul {
+            width: 245px;
+            height: auto;
+        }
+
+        .first ul li {
+            float: left;
+            margin-bottom: 8px;
+            font-size: 14px;
+            padding: 2px 20px;
+            border-right: 1px solid #999;
+            list-style: none;
+        }
+
+        .first ul li:nth-child(3n) {
+            border-right: none;
+        }
+
+        .second {
+            position: relative;
+        }
+
+        .logo {
+            display: block;
+            width: 55px;
+            height: 55px;
+            background-color: #ff6700;
+            text-align: left;
+            text-indent: -9990em;
+        }
+
+        .logo::before {
+            content: '';
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            left: -55px;
+            top: 0px;
+            transition: all .3s;
+            background: url(images/css第八天/mi-home.png) no-repeat center center;
+            opacity: 0;
+        }
+
+        .logo::after {
+            content: '';
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            top: 0px;
+            left: 0px;
+            background: url(images/css第八天/mi-logo.png) no-repeat center center;
+            transition: all .3s;
+            opacity: 1;
+        }
+
+        .logo:hover::after {
+            opacity: 0;
+            margin-left: 55px;
+        }
+
+        .logo:hover::before {
+            opacity: 1;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <ul>
+            <li>测试</li>
+            <li>测试</li>
+            <li>测试</li>
+            <li>测试</li>
+            <li>测试</li>
+            <li>测试</li>
+            <li>测试</li>
+        </ul>
+    </div>
+
+    <div class="second">
+        <a href="#" class="logo">小米官网</a>
+    </div>
+
+
+</body>
+
+</html>
