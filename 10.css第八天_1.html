@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .first {
+            width: 245px;
+            height: 300px;
+        }
+
+        .first ul {
+            width: 245px;
+            height: auto;
+        }
+
+        .first ul li {
+            float: left;
+            margin-bottom: 8px;
+            font-size: 14px;
+            padding: 2px 20px;
+            border-right: 1px solid #999;
+            list-style: none;
+        }
+
+        .first ul li:nth-child(3n) {
+            border-right: none;
+        }
+
+        .second {
+            position: relative;
+        }
+
+        .logo {
+            display: block;
+            width: 55px;
+            height: 55px;
+            background-color: #ff6700;
+            text-align: left;
+            text-indent: -9990em;
+        }
+
+        .logo::before {
+            content: '';
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            left: -55px;
+            top: 0px;
+            transition: all .3s;
+            background: url(images/css第八天/mi-home.png) no-repeat center center;
+            opacity: 0;
+        }
+
+        .logo::after {
+            content: '';
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            top: 0px;
+            left: 0px;
+            background: url(images/css第八天/mi-logo.png) no-repeat center center;
+            transition: all .3s;
+            opacity: 1;
+        }
+
+        .logo:hover::after {
+            opacity: 0;
+            margin-left: 55px;
+        }
+
+        .logo:hover::before {
+            opacity: 1;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <ul>
+            <li>测试</li>
+            <li>测试</li>
+            <li>测试</li>
+            <li>测试</li>
+            <li>测试</li>
+            <li>测试</li>
+            <li>测试</li>
+        </ul>
+    </div>
+
+    <div class="second">
+        <a href="#" class="logo">小米官网</a>
+    </div>
+    <style>
+        li {
+            list-style: none;
+        }
+
+        .product-container {
+            position: relative;
+            float: left;
+            height: 458px;
+            width: 287px;
+        }
+
+        .product-img {
+            height: 287px;
+            width: 287px;
+        }
+
+        .product-img img {
+            width: auto;
+            height: auto;
+        }
+
+        .product-title {
+            width: 263px;
+            height: 55px;
+            padding: 3px 12px;
+            font-size: 14px;
+            line-height: 21px;
+            color: #666;
+        }
+
+        .product-price {
+            height: 20px;
+            width: 263px;
+            padding: 3px 12px;
+        }
+
+        .product-price span {
+            font-size: 20px;
+            color: red;
+            font-weight: 500;
+        }
+
+        .product-price p {
+            display: inline-block;
+            font-size: 12px;
+            color: #a4a4a4;
+            text-decoration: line-through;
+            font-weight: 800;
+        }
+
+        .product-quantity {
+            height: 14px;
+            width: 263px;
+            padding: 3px 12px;
+            font-size: 12px;
+            line-height: 14px;
+            color: #666;
+        }
+
+        .product-quantity p {
+            display: inline-block;
+        }
+
+        .red {
+            color: #b1191a;
+        }
+
+        .purchase {
+            display: inline-block;
+            width: 287px;
+            height: 50px;
+            font-size: 20px;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+            background-color: #b1191a;
+            text-decoration: none;
+        }
+
+        .progress {
+            display: inline-block;
+            margin: 0px 5px;
+            width: 132px;
+            height: 10px;
+            border: 1px solid #b1191a;
+            vertical-align: middle;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress div {
+            width: 82px;
+            height: 10px;
+            background-color: #b1191a;
+        }
+    </style>
+    <div class="third">
+        <ul>
+            <li class="product-container">
+                <div class="product-img">
+                    <img src="images/css第八天/mobile.jpg" alt="">
+                </div>
+                <div class="product-title">
+                    <p>Apple苹果iPhone 6s Plus（ A1699 ）32G 金色 移动联通电信4G手机</p>
+                </div>
+                <div class="product-price">
+                    <span>¥6088</span>
+                    <p>¥6988</p>
+                </div>
+                <div class="product-quantity">
+                    <p>已售<span class="red">87%</span></p>
+                    <div class="progress">
+                        <div></div>
+                    </div>
+                    <p>剩余<span class="red">29</span>件</p>
+                </div>
+                <a href="#" class="purchase">立即抢购</a>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
