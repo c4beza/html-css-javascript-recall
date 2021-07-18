@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    margin: 30px auto;
+    width: 800px;
+    height: 350px;
+    border: 1px solid brown;
+}
+
+.tab {
+    width: 800px;
+    height: 49px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid brown;
+}
+
+.tab ul li {
+    position: relative;
+    float: left;
+    padding: 10px 30px;
+    height: 29px;
+    width: auto;
+    border-bottom: 1px solid brown;
+    border-right: 1px solid brown;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+.tab ul .tab-active {
+    border-bottom: 1px solid white;
+}
+
+.close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    border-bottom-left-radius: 20px;
+    background-image: url(../images/javascript第一天/close.png);
+    background-size: auto 100%;
+}
+
+.create {
+    float: right;
+    height: 28px;
+    width: 28px;
+    background-image: url(../images/javascript第一天/add.png);
+    margin: 10px;
+    border: 1px solid brown;
+}
+.content-container {
+    width: 800px;
+    height: 290px;
+}
+
+.content-container section {
+    width: 800px;
+    height: 280px;
+    display: none;
+}
+
+.content-container .con-active {
+    display: block;
+    padding: 10px;
+}
